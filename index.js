@@ -1,2 +1,13 @@
-console.log('desde el index');
+const express = require('express');
+
+// Crear el servidor
+const app = express();
+
+// Puerto de la app
+const PORT = process.env.PORT || 4000;
+
+// Arrancar la app
+app.listen( PORT, () => {
+    console.log(`on port ${PORT}`);
+})
 
